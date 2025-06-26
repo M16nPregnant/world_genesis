@@ -92,7 +92,7 @@
 	F.Grant(src)
 
 	is_adult = new_is_adult
-
+//edit
 	if(is_adult)
 		var/datum/action/innate/slime/reproduce/R = new
 		R.Grant(src)

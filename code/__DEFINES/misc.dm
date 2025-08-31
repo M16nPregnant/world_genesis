@@ -52,9 +52,9 @@ Will print: "/mob/living/carbon/human/death" (you can optionally embed it in a s
 #define GLOVES_LAYER			26
 #define EARS_LAYER				25
 #define GENITALS_UNDER_LAYER 	24
-#define MODULAR_BELLY_LAYER		23		//GS13 Edit - Modular Clothes Layer
-#define MODULAR_BREASTS_LAYER	22		//GS13 Edit - Modular Clothes Layer
-#define MODULAR_BUTT_LAYER		21		//GS13 Edit - Modular Clothes Layer
+#define MODULAR_BELLY_LAYER		22		//GS13 Edit - Modular Clothes Layer
+#define MODULAR_BREASTS_LAYER	21		//GS13 Edit - Modular Clothes Layer
+#define MODULAR_BUTT_LAYER		23		//GS13 Edit - Modular Clothes Layer
 #define SUIT_LAYER				20
 #define GLASSES_LAYER			19
 #define BELT_LAYER				18		//Possible make this an overlay of somethign required to wear a belt?

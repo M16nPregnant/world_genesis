@@ -65,10 +65,10 @@
 #define MILK_EFFICIENCY		1
 
 #define BUTT_SIZE_DEF		1
-#define BUTT_SIZE_MAX		9  //butt genitals are special in that they have caps. if there's the event there's even bigger butt sprites, raise this number.
+#define BUTT_SIZE_MAX		19  //butt genitals are special in that they have caps. if there's the event there's even bigger butt sprites, raise this number.
 
 #define BELLY_SIZE_DEF	1
-#define BELLY_SIZE_MAX	9 //WG13 Change BACK TO 19 when test weekend is over!
+#define BELLY_SIZE_MAX	19 //WG13 Change BACK TO 19 when test weekend is over!
 
 #define DEF_BELLY_SHAPE "Soft Belly" //GS13 - More belly types
 

@@ -21,7 +21,7 @@
 	unarousal_verb = "Your breasts no longer feel sensitive"
 	orgasm_verb = "leaking"
 	fluid_transfer_factor = 0.5
-	var/static/list/breast_values = list("a" =  1, "b" = 2, "c" = 3, "d" = 4, "e" = 5, "f" = 6, "g" = 7, "h" = 8, "i" = 9, "j" = 10, "k" = 11, "l" = 12, "m" = 13, "n" = 14, "o" = 15, "huge" = 16, "massive" = 17, "giga" = 25, "impossible" = 30, "flat" = 0)
+	var/static/list/breast_values = list("a" =  1, "b" = 2, "c" = 3, "d" = 4, "e" = 5, "f" = 6, "g" = 7, "h" = 8, "i" = 9, "j" = 10, "k" = 11, "l" = 12, "m" = 13, "n" = 14, "o" = 15, "p" = 16, "q" = 17, "r" = 18, "s" = 30, "flat" = 0)
 	var/cached_size //these two vars pertain size modifications and so should be expressed in NUMBERS.
 	var/prev_size //former cached_size value, to allow update_size() to early return should be there no significant changes.
 
@@ -96,16 +96,10 @@
 			size = "flat"
 		if(1 to 8) //modest
 			size = breast_values[rounded_cached]
-		if(9 to 15) //massive
+		if(9 to 19) //massive
 			size = breast_values[rounded_cached]
-		if(16) //rediculous
-			size = "huge"
-		if(17 to 24)
-			size = "massive"
-		if(25 to 29)
-			size = "giga"
-		if(30 to INFINITY)
-			size = "impossible"
+		if(20 to INFINITY)
+			size = "s"
 
 	if(rounded_cached < 30 && owner)//Because byond doesn't count from 0, I have to do this.
 		var/mob/living/carbon/human/H = owner

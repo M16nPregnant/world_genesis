@@ -2796,12 +2796,12 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					var/max_B = CONFIG_GET(number/butt_max_size_prefs)
 					var/new_length = input(user, "Butt size:\n([min_B]-[max_B])", "Character Preference") as num|null
 					if(new_length)
-						features["butt_size"] = clamp(round(new_length), min_B, max_B)
+						features["butt_size"] = clamp(round(new_length), 1, BUTT_SIZE_MAX)
 				//GS13 Edit
 				if("max_butt_size")
-					var/new_max = input(user, "Max fat butt size:\n([0]-[10])", "Character Preference") as num|null
+					var/new_max = input(user, "Max fat butt size:\n([0]-[19])", "Character Preference") as num|null
 					if(new_max)
-						features["max_butt_size"] = clamp(round(new_max), 0, 10)
+						features["max_butt_size"] = clamp(round(new_max), 0, BUTT_SIZE_MAX)
 
 				if("butt_visibility")
 					var/n_vis = input(user, "Butt Visibility", "Character Preference") as null|anything in CONFIG_GET(str_list/safe_visibility_toggles)
